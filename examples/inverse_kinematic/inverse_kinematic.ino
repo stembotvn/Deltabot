@@ -38,7 +38,7 @@ const int MAX_BUF      = 64;
 #define MIN_FEED_RATE    (0.01)  // cm/s
 
 static const float shoulder_to_elbow  = 9.5f;  // cm        
-static const float elbow_to_wrist     = 21.0f;  // cm
+static const float elbow_to_wrist     = 32.0f;  // cm
 
 #if NUM_ARMS == 4
 static const float center_to_shoulder = 5.0f;  // cm
