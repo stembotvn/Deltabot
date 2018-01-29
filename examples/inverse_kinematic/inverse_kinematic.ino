@@ -246,7 +246,7 @@ void ik() {
     
     if( ( arm.elbow.relative | temp ) < 0 ) x=-x;
 
-    float new_angle=atan2(-y,x) * RAD2DEG;
+    float new_angle=atan2(-y,x) * RAD2DEG; Serial.print("Servo Angle"); Serial.print(i);Serial.print(" =");Serial.println(new_angle);
     // cap the angle
     if(new_angle>90) new_angle=90;
     if(new_angle<-90) new_angle=-90;
@@ -599,6 +599,7 @@ void setup() {
  */
 void loop() {
   listenToSerial();
+  
 }
 
 
@@ -622,4 +623,3 @@ void loop() {
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
 //------------------------------------------------------------------------------
-
